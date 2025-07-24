@@ -63,7 +63,7 @@ allure serve target/allure-results
 > 📦 You must install the [Allure CLI](https://docs.qameta.io/allure/#_installing_a_commandline) to view reports locally.
 
 ### 🌐 View Deployed Report (CI)
-➡️ [Allure Report (GitHub Pages)](https://nanaquaci.github.io/Advanced-Week7/)
+➡️ [Allure Report (GitHub Pages)](https://nanaquaci.github.io/Advanced-Week8/)
 
 ## 🔗 Resources
 - 📘 [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
@@ -72,7 +72,7 @@ allure serve target/allure-results
 
 ## 👤 Author
 **Nana Quaci**
-> Week 7 – Graduate Trainee Program  
+> Week 8 – Graduate Trainee Program  
 > Advanced Testing Project
 
 ## 🏁 License
