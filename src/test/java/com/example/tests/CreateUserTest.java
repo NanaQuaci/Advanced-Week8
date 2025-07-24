@@ -5,6 +5,7 @@ import com.example.endpoints.PostEndpoint;
 import com.example.testdata.PostTestsData;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;
@@ -27,6 +28,7 @@ public class CreateUserTest extends BaseTest {
                 .statusCode(201)
                 .body("name", equalTo("Test User"))
                 .body("email", equalTo("tester@example.com"));
+
     }
 
     @Test
@@ -36,7 +38,8 @@ public class CreateUserTest extends BaseTest {
         Map<String, Object> payload = PostTestsData.userMissingName();
         Response response = post.createUser(payload);
 
-        response.then().statusCode(201); // JSONPlaceholder still returns 201, but in real API you'd expect 400/422
+        response.then().statusCode(201);
+
     }
 
     @Test
